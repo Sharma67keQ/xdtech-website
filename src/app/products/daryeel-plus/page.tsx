@@ -70,7 +70,9 @@ export default function DaryeelPlusPage() {
         </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
           {Array.from({ length: 3 }).map((_, index) => (
-            <Card key={index} className="aspect-[4/5]" />
+            <Card key={index} className="aspect-[4/5]">
+              <div className="h-full w-full rounded-lg bg-slate-900/70" />
+            </Card>
           ))}
         </div>
       </Container>
