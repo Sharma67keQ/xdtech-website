@@ -12,7 +12,9 @@
                          "framer-motion":  "latest",
                          "next":  "latest",
                          "react":  "latest",
-                         "react-dom":  "latest"
+                         "react-dom":  "latest",
+                         "@supabase/supabase-js":  "latest",
+                         "@supabase/ssr":  "latest"
                      },
     "devDependencies":  {
                             "@types/node":  "latest",

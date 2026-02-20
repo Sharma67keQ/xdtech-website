@@ -8,7 +8,7 @@ export function SectionTitle({ eyebrow, title, description }: SectionTitleProps)
   return (
     <div className="space-y-3">
       {eyebrow ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-blue">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-lab-blue">
           {eyebrow}
         </p>
       ) : null}

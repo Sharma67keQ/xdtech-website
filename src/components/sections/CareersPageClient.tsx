@@ -6,7 +6,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Modal } from "@/components/ui/Modal";
-import { careers } from "@/data/careers";
+import type { Job } from "@/lib/types";
 
 interface FormState {
   name: string;
@@ -15,7 +15,7 @@ interface FormState {
   message: string;
 }
 
-export function CareersPageClient() {
+export function CareersPageClient({ jobs }: { jobs: Job[] }) {
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -70,13 +70,12 @@ export function CareersPageClient() {
       />
 
       <div className="grid gap-6 md:grid-cols-3">
-        {careers.map((role) => (
-          <Card key={role.title} className="space-y-4">
+        {jobs.map((role) => (
+          <Card key={role.id} className="space-y-4">
             <h3 className="text-lg font-semibold text-white">{role.title}</h3>
             <div className="flex flex-wrap gap-2 text-xs text-slate-400">
               <span className="rounded-full border border-slate-800 px-3 py-1">{role.location}</span>
               <span className="rounded-full border border-slate-800 px-3 py-1">{role.type}</span>
-              <span className="rounded-full border border-slate-800 px-3 py-1">{role.team}</span>
             </div>
             <Button onClick={() => {
               setForm((prev) => ({ ...prev, role: role.title }));

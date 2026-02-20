@@ -18,9 +18,9 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-900/80 bg-brand-dark/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-lab-bg/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <Link href="/" className="text-lg font-semibold tracking-[0.2em] text-white">
+        <Link href="/" className="text-lg font-semibold tracking-[0.3em] text-white">
           XD TECH
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
@@ -52,7 +52,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-slate-900 bg-brand-dark2/95 backdrop-blur md:hidden"
+            className="border-t border-white/10 bg-lab-bg/95 backdrop-blur md:hidden"
           >
             <Container className="flex flex-col gap-4 py-6">
               {navLinks.map((link) => (

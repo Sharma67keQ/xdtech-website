@@ -42,7 +42,7 @@ export default function DaryeelPlusPage() {
         <Container className="py-16">
           <Reveal>
             <div className="max-w-3xl space-y-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-brand-blue">
+              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-lab-blue">
                 Daryeel Plus
               </p>
               <h1 className="text-4xl font-semibold text-white md:text-5xl">

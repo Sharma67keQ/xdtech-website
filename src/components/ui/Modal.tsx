@@ -19,7 +19,7 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.2 }}
-        className="w-full max-w-xl rounded-2xl border border-slate-800 bg-brand-dark p-6 shadow-2xl"
+        className="w-full max-w-xl rounded-2xl border border-white/10 bg-lab-bg p-6 shadow-2xl"
         role="dialog"
         aria-modal="true"
         aria-label={title}
